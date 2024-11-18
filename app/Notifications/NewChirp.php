@@ -28,7 +28,7 @@ class NewChirp extends Notification
      */
     public function via(object $notifiable): array
     {
-        return ['mail'];
+        return ['ahmadfahrudin@gmail.com'];
     }
 
     /**
@@ -43,7 +43,7 @@ class NewChirp extends Notification
 
             ->line(Str::limit($this->chirp->message, 50))
 
-            ->action('Go to Chirper', url('/'))
+            ->action('pergi ke google', url('/google.com'))
             ->line('Thank you for using our application!');
     }
 
