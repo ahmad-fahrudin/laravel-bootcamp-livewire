@@ -2,7 +2,6 @@
 
 use Livewire\Volt\Component;
 use App\Models\Chirp;
-
 use Illuminate\Database\Eloquent\Collection;
 
 new class extends Component {
@@ -23,7 +22,6 @@ new class extends Component {
     public function edit(Chirp $chirp): void
     {
         $this->editing = $chirp;
-
         $this->getChirps();
     }
 
@@ -38,9 +36,7 @@ new class extends Component {
     public function delete(Chirp $chirp): void
     {
         $this->authorize('delete', $chirp);
-
         $chirp->delete();
-
         $this->getChirps();
     }
 }; ?>

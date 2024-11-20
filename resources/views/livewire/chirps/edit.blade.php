@@ -43,7 +43,7 @@ new class extends Component {
 
         <x-primary-button class="mt-4">{{ __('Save') }}</x-primary-button>
 
-        <button class="mt-4" wire:click.prevent="cancel">Cancel</button>
+        <button type="button" class="mt-4" wire:click="cancel">Cancel</button>
 
     </form>
 </div>
